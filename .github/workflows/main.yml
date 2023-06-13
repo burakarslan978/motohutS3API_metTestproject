@@ -24,10 +24,10 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Restore dependencies
-      run: dotnet restore motohutS3API_metTestproject/motohut_security/
+      run: dotnet restore motohutS3API_metTestproject/motohut_security/Motohut API.sln
 
     - name: Build
-      run: dotnet build motohutS3API_metTestproject/motohut_security/ --no-restore
+      run: dotnet build motohutS3API_metTestproject/motohut_security/Motohut API.sln --no-restore
 
     - name: Test
       run: dotnet test motohutS3API_metTestproject/Motohut_Integratrietesten/ --no-build --verbosity normal
