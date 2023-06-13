@@ -3,7 +3,7 @@ name: Build, Integration Testing and Code Scanning
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   actions: read
