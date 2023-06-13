@@ -16,6 +16,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Show git status
+      run: |
+        git status
+        git submodule status
+        
     - name: List repository contents
       run: |
         ls -R
