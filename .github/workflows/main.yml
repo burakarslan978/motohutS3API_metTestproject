@@ -1,9 +1,9 @@
-name: Build, Integration Testing and Code Scanning
+name: Build, Test and Code Scanning
 
 on:
   push:
     branches:
-      - master
+      - main
 
 permissions:
   actions: read
@@ -24,13 +24,13 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore motohutS3API_metTestproject/motohut_security/
 
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build motohutS3API_metTestproject/motohut_security/ --no-restore
 
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test motohutS3API_metTestproject/Motohut_Integratrietesten/ --no-build --verbosity normal
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
