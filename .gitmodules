@@ -1,3 +1,3 @@
-[submodule "motohutS3API_metTestproject/motohut_security"]
-	path = motohutS3API_metTestproject/motohut_security
+[submodule "motohut_security"]
+	path = motohut_security
 	url = https://github.com/henk-post/motohut_securityAPI.git
