@@ -16,15 +16,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Show git status
-      run: |
-        git status
-        git submodule status
         
     - name: List repository contents
       run: |
         ls -R
-        cat .gitmodules
         
     - name: Checkout
       uses: actions/checkout@v2.4.1
